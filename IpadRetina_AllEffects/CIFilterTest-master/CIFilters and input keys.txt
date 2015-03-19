@@ -1,0 +1,325 @@
+CI filters from iOS version 7.1:
+
+Category CICategoryDistortionEffect:
+	filter CIBumpDistortion. (Bump Distortion)	Categories:  CICategoryDistortionEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputRadius (CIAttributeTypeDistance/NSNumber)	inputScale (CIAttributeTypeScalar/NSNumber)
+	filter CIBumpDistortionLinear. (Bump Distortion Linear)	Categories:  CICategoryDistortionEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputRadius (CIAttributeTypeDistance/NSNumber)	
+		inputAngle (CIAttributeTypeAngle/NSNumber)	inputScale (CIAttributeTypeScalar/NSNumber)
+	filter CICircleSplashDistortion. (Circle Splash Distortion)	Categories:  CICategoryDistortionEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputRadius (CIAttributeTypeDistance/NSNumber)
+	filter CIHoleDistortion. (Hole Distortion)	Categories:  CICategoryDistortionEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputRadius (CIAttributeTypeDistance/NSNumber)
+	filter CILightTunnel. (Light Tunnel)	Categories:  CICategoryDistortionEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputRotation (CIAttributeTypeAngle/NSNumber)	inputRadius (CIAttributeTypeAngle/NSNumber)
+	filter CIPinchDistortion. (Pinch Distortion)	Categories:  CICategoryDistortionEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputRadius (CIAttributeTypeDistance/NSNumber)	inputScale (CIAttributeTypeScalar/NSNumber)
+	filter CITwirlDistortion. (Twirl Distortion)	Categories:  CICategoryDistortionEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputRadius (CIAttributeTypeDistance/NSNumber)	inputAngle (CIAttributeTypeAngle/NSNumber)
+	filter CIVortexDistortion. (Vortex Distortion)	Categories:  CICategoryDistortionEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputRadius (CIAttributeTypeDistance/NSNumber)	inputAngle (CIAttributeTypeAngle/NSNumber)
+
+Category CICategoryGeometryAdjustment:
+	filter CIAffineTransform. (Affine Transform)	Categories:  CICategoryGeometryAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTransform (CIAttributeTypeTransform/NSValue)
+	filter CICrop. (Crop)	Categories:  CICategoryGeometryAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputRectangle (CIAttributeTypeRectangle/CIVector)
+	filter CILanczosScaleTransform. (Lanczos Scale Transform)	Categories:  CICategoryGeometryAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputScale (CIAttributeTypeScalar/NSNumber)	inputAspectRatio (CIAttributeTypeScalar/NSNumber)
+	filter CIPerspectiveTile. (Perspective Tile)	Categories:  CICategoryGeometryAdjustment,  CICategoryVideo,  CICategoryStillImage
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTopLeft (CIAttributeTypePosition/CIVector)	inputTopRight (CIAttributeTypePosition/CIVector)	
+		inputBottomRight (CIAttributeTypePosition/CIVector)	inputBottomLeft (CIAttributeTypePosition/CIVector)
+	filter CIPerspectiveTransform. (Perspective Transform)	Categories:  CICategoryGeometryAdjustment,  CICategoryVideo,  CICategoryStillImage
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTopLeft (CIAttributeTypePosition/CIVector)	inputTopRight (CIAttributeTypePosition/CIVector)	
+		inputBottomRight (CIAttributeTypePosition/CIVector)	inputBottomLeft (CIAttributeTypePosition/CIVector)
+	filter CIPerspectiveTransformWithExtent. (Perspective Transform with Extent)	Categories:  CICategoryGeometryAdjustment,  CICategoryVideo,  CICategoryStillImage
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputExtent (CIAttributeTypeRectangle/CIVector)	inputTopLeft (CIAttributeTypePosition/CIVector)	
+		inputTopRight (CIAttributeTypePosition/CIVector)	inputBottomRight (CIAttributeTypePosition/CIVector)	
+		inputBottomLeft (CIAttributeTypePosition/CIVector)
+	filter CIStraightenFilter. (Straighten)	Categories:  CICategoryGeometryAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputAngle (CIAttributeTypeAngle/NSNumber)
+
+Category CICategoryCompositeOperation:
+	filter CIAdditionCompositing. (Addition)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  
+		CICategoryNonSquarePixels,  CICategoryHighDynamicRange,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIColorBlendMode. (Color Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIColorBurnBlendMode. (Color Burn Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  
+		CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIColorDodgeBlendMode. (Color Dodge Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  
+		CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIDarkenBlendMode. (Darken Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIDifferenceBlendMode. (Difference Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIExclusionBlendMode. (Exclusion Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIHardLightBlendMode. (Hard Light Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIHueBlendMode. (Hue Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CILightenBlendMode. (Lighten Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CILuminosityBlendMode. (Luminosity Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIMaximumCompositing. (Maximum)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryHighDynamicRange,  
+		CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIMinimumCompositing. (Minimum)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryHighDynamicRange,  
+		CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIMultiplyBlendMode. (Multiply Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIMultiplyCompositing. (Multiply)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels, 
+		 CICategoryHighDynamicRange,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIOverlayBlendMode. (Overlay Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CISaturationBlendMode. (Saturation Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CIScreenBlendMode. (Screen Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CISoftLightBlendMode. (Soft Light Blend Mode)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CISourceAtopCompositing. (Source Atop)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryHighDynamicRange,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CISourceInCompositing. (Source In)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryHighDynamicRange,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CISourceOutCompositing. (Source Out)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels, 
+		 CICategoryHighDynamicRange,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+	filter CISourceOverCompositing. (Source Over)	Categories:  CICategoryCompositeOperation,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryHighDynamicRange,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)
+
+Category CICategoryHalftoneEffect:
+	filter CICircularScreen. (Circular Screen)	Categories:  CICategoryHalftoneEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputWidth (CIAttributeTypeDistance/NSNumber)	inputSharpness (CIAttributeTypeScalar/NSNumber)
+	filter CIDotScreen. (Dot Screen)	Categories:  CICategoryHalftoneEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputAngle (CIAttributeTypeAngle/NSNumber)	
+		inputWidth (CIAttributeTypeDistance/NSNumber)	inputSharpness (CIAttributeTypeScalar/NSNumber)
+	filter CIHatchedScreen. (Hatched Screen)	Categories:  CICategoryHalftoneEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)	
+		inputSharpness (CIAttributeTypeScalar/NSNumber)
+	filter CILineScreen. (Line Screen)	Categories:  CICategoryHalftoneEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)	
+		inputSharpness (CIAttributeTypeScalar/NSNumber)
+
+Category CICategoryColorAdjustment:
+	filter CIColorControls. (Color Controls)	Categories:  CICategoryColorAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputSaturation (CIAttributeTypeScalar/NSNumber)	inputBrightness (CIAttributeTypeScalar/NSNumber)	
+		inputContrast (CIAttributeTypeScalar/NSNumber)
+	filter CIColorMatrix. (Color Matrix)	Categories:  CICategoryColorAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputRVector ((null)/CIVector)	inputGVector ((null)/CIVector)	inputBVector ((null)/CIVector)	inputAVector ((null)/CIVector)	
+		inputBiasVector ((null)/CIVector)
+	filter CIExposureAdjust. (Exposure Adjust)	Categories:  CICategoryColorAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn,  
+		CICategoryXMPSerializable
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputEV (CIAttributeTypeScalar/NSNumber)
+	filter CIGammaAdjust. (Gamma Adjust)	Categories:  CICategoryColorAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputPower (CIAttributeTypeScalar/NSNumber)
+	filter CIHueAdjust. (Hue Adjust)	Categories:  CICategoryColorAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputAngle (CIAttributeTypeAngle/NSNumber)
+	filter CILinearToSRGBToneCurve. (Linear to sRGB Tone Curve)	Categories:  CICategoryColorAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CISRGBToneCurveToLinear. (sRGB Tone Curve to Linear)	Categories:  CICategoryColorAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  
+		CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CITemperatureAndTint. (Temperature and Tint)	Categories:  CICategoryColorAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputNeutral (CIAttributeTypeOffset/CIVector)	inputTargetNeutral (CIAttributeTypeOffset/CIVector)
+	filter CIToneCurve. (Tone Curve)	Categories:  CICategoryColorAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputPoint0 (CIAttributeTypeOffset/CIVector)	inputPoint1 (CIAttributeTypeOffset/CIVector)	inputPoint2 (CIAttributeTypeOffset/CIVector)	
+		inputPoint3 (CIAttributeTypeOffset/CIVector)	
+		inputPoint4 (CIAttributeTypeOffset/CIVector)
+	filter CIVibrance. (Vibrance)	Categories:  CICategoryColorAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputAmount (CIAttributeTypeScalar/NSNumber)
+	filter CIWhitePointAdjust. (White Point Adjust)	Categories:  CICategoryColorAdjustment,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputColor (CIAttributeTypeColor/CIColor)
+
+Category CICategoryColorEffect:
+	filter CIColorClamp. (Color Clamp)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputMinComponents ((null)/CIVector)	inputMaxComponents ((null)/CIVector)
+	filter CIColorCrossPolynomial. (Color Cross Polynomial)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCoefficients ((null)/CIVector)	inputRedCoefficients ((null)/CIVector)	inputGreenCoefficients ((null)/CIVector)	
+		inputBlueCoefficients ((null)/CIVector)
+	filter CIColorCube. (Color Cube)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCubeDimension (CIAttributeTypeCount/NSNumber)	inputCubeData ((null)/NSData)
+	filter CIColorCubeWithColorSpace. (Color Cube with ColorSpace)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage, 
+		 CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCubeDimension (CIAttributeTypeCount/NSNumber)	inputCubeData ((null)/NSData)	inputColorSpace ((null)/NSObject)
+	filter CIColorInvert. (Color Invert)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CIColorMap. (Color Map)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputGradientImage (CIAttributeTypeImage/CIImage)
+	filter CIColorMonochrome. (Color Monochrome)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputColor (CIAttributeTypeColor/CIColor)	inputIntensity (CIAttributeTypeScalar/NSNumber)
+	filter CIColorPolynomial. (Color Polynomial)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputRedCoefficients ((null)/CIVector)	inputGreenCoefficients ((null)/CIVector)	inputBlueCoefficients ((null)/CIVector)	
+		inputAlphaCoefficients ((null)/CIVector)
+	filter CIColorPosterize. (Color Posterize)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputLevels (CIAttributeTypeScalar/NSNumber)
+	filter CIFalseColor. (False Color)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputColor0 (CIAttributeTypeColor/CIColor)	inputColor1 (CIAttributeTypeColor/CIColor)
+	filter CIMaskToAlpha. (Mask to Alpha)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CIMaximumComponent. (Maximum Component)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CIMinimumComponent. (Minimum Component)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CIPhotoEffectChrome. (Photo Effect Chrome)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn,  
+		CICategoryXMPSerializable
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CIPhotoEffectFade. (Photo Effect Fade)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn,  
+		CICategoryXMPSerializable
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CIPhotoEffectInstant. (Photo Effect Instant)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn,  
+		CICategoryXMPSerializable
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CIPhotoEffectMono. (Photo Effect Mono)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn,  
+		CICategoryXMPSerializable
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CIPhotoEffectNoir. (Photo Effect Noir)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn,  
+		CICategoryXMPSerializable
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CIPhotoEffectProcess. (Photo Effect Process)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn,  
+		CICategoryXMPSerializable
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CIPhotoEffectTonal. (Photo Effect Tonal)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn,  
+		CICategoryXMPSerializable
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CIPhotoEffectTransfer. (Photo Effect Transfer)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn, 
+		CICategoryXMPSerializable
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)
+	filter CISepiaTone. (Sepia Tone)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryStillImage,  CICategoryBuiltIn,  
+		CICategoryXMPSerializable
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputIntensity (CIAttributeTypeScalar/NSNumber)
+	filter CIVignette. (Vignette)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputIntensity (CIAttributeTypeScalar/NSNumber)	inputRadius (CIAttributeTypeScalar/NSNumber)
+	filter CIVignetteEffect. (Vignette Effect)	Categories:  CICategoryColorEffect,  CICategoryVideo,  CICategoryInterlaced,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputRadius (CIAttributeTypeDistance/NSNumber)	inputIntensity (CIAttributeTypeScalar/NSNumber)	
+		inputFalloff (CIAttributeTypeScalar/NSNumber)
+
+Category CICategoryTransition:
+	filter CIBarsSwipeTransition. (Bars Swipe Transition)	Categories:  CICategoryTransition,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTargetImage (CIAttributeTypeImage/CIImage)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)	
+		inputBarOffset (CIAttributeTypeScalar/NSNumber)	inputTime (CIAttributeTypeTime/NSNumber)
+	filter CICopyMachineTransition. (Copy Machine)	Categories:  CICategoryTransition,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTargetImage (CIAttributeTypeImage/CIImage)	inputExtent (CIAttributeTypeRectangle/CIVector)	inputColor (CIAttributeTypeColor/CIColor)	
+		inputTime (CIAttributeTypeTime/NSNumber)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)	inputOpacity (CIAttributeTypeScalar/NSNumber)
+	filter CIDisintegrateWithMaskTransition. (Disintegrate With Mask)	Categories:  CICategoryTransition,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTargetImage (CIAttributeTypeImage/CIImage)	inputMaskImage (CIAttributeTypeImage/CIImage)	inputTime (CIAttributeTypeScalar/NSNumber)	
+		inputShadowRadius (CIAttributeTypeDistance/NSNumber)	inputShadowDensity (CIAttributeTypeScalar/NSNumber)	inputShadowOffset (CIAttributeTypeOffset/CIVector)
+	filter CIDissolveTransition. (Dissolve)	Categories:  CICategoryTransition,  CICategoryVideo,  CICategoryStillImage,  CICategoryInterlaced,  CICategoryNonSquarePixels,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTargetImage (CIAttributeTypeImage/CIImage)	inputTime (CIAttributeTypeTime/NSNumber)
+	filter CIFlashTransition. (Flash)	Categories:  CICategoryTransition,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTargetImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputExtent (CIAttributeTypeRectangle/CIVector)
+			inputColor (CIAttributeTypeColor/CIColor)	inputTime (CIAttributeTypeTime/NSNumber)	inputMaxStriationRadius (CIAttributeTypeScalar/NSNumber)	
+		inputStriationStrength (CIAttributeTypeScalar/NSNumber)	inputStriationContrast (CIAttributeTypeScalar/NSNumber)	inputFadeThreshold (CIAttributeTypeScalar/NSNumber)
+	filter CIModTransition. (Mod)	Categories:  CICategoryTransition,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTargetImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputTime (CIAttributeTypeTime/NSNumber)
+			inputAngle (CIAttributeTypeAngle/NSNumber)	inputRadius (CIAttributeTypeDistance/NSNumber)	inputCompression (CIAttributeTypeDistance/NSNumber)
+	filter CISwipeTransition. (Swipe)	Categories:  CICategoryTransition,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTargetImage (CIAttributeTypeImage/CIImage)	inputExtent (CIAttributeTypeRectangle/CIVector)	inputColor (CIAttributeTypeColor/CIColor)	
+		inputTime (CIAttributeTypeTime/NSNumber)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)	inputOpacity (CIAttributeTypeScalar/NSNumber)
+
+Category CICategoryTileEffect:
+	filter CIAffineClamp. (Affine Clamp)	Categories:  CICategoryTileEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTransform ((null)/NSValue)
+	filter CIAffineTile. (Affine Tile)	Categories:  CICategoryTileEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputTransform ((null)/NSValue)
+	filter CIEightfoldReflectedTile. (Eightfold Reflected Tile)	Categories:  CICategoryTileEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)
+	filter CIFourfoldReflectedTile. (Fourfold Reflected Tile)	Categories:  CICategoryTileEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)	
+		inputAcuteAngle (CIAttributeTypeAngle/NSNumber)
+	filter CIFourfoldRotatedTile. (Fourfold Rotated Tile)	Categories:  CICategoryTileEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)
+	filter CIFourfoldTranslatedTile. (Fourfold Translated Tile)	Categories:  CICategoryTileEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)	
+		inputAcuteAngle (CIAttributeTypeAngle/NSNumber)
+	filter CIGlideReflectedTile. (Glide Reflected Tile)	Categories:  CICategoryTileEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)
+	filter CISixfoldReflectedTile. (Sixfold Reflected Tile)	Categories:  CICategoryTileEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)
+	filter CISixfoldRotatedTile. (Sixfold Rotated Tile)	Categories:  CICategoryTileEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)
+	filter CITriangleKaleidoscope. (Triangle Kaleidoscope)	Categories:  CICategoryTileEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputPoint (CIAttributeTypePosition/CIVector)	inputSize (CIAttributeTypeScalar/NSNumber)	inputRotation (CIAttributeTypeAngle/NSNumber)	
+		inputDecay (CIAttributeTypeScalar/NSNumber)
+	filter CITwelvefoldReflectedTile. (Twelvefold Reflected Tile)	Categories:  CICategoryTileEffect,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputAngle (CIAttributeTypeAngle/NSNumber)	inputWidth (CIAttributeTypeDistance/NSNumber)
+
+Category CICategoryGenerator:
+	filter CICheckerboardGenerator. (Checkerboard)	Categories:  CICategoryGenerator,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputCenter (CIAttributeTypePosition/CIVector)	inputColor0 ((null)/CIColor)	inputColor1 ((null)/CIColor)	inputWidth (CIAttributeTypeDistance/NSNumber)	
+		inputSharpness (CIAttributeTypeScalar/NSNumber)
+	filter CIConstantColorGenerator. (Constant Color)	Categories:  CICategoryGenerator,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputColor (CIAttributeTypeColor/CIColor)
+	filter CIQRCodeGenerator. (CIQRCode Generator)	Categories:  CICategoryGenerator,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputMessage ((null)/NSData)	inputCorrectionLevel ((null)/NSString)
+	filter CIRandomGenerator. (Random Generator)	Categories:  CICategoryGenerator,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+
+	filter CIStarShineGenerator. (Star Shine)	Categories:  CICategoryGenerator,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputCenter (CIAttributeTypePosition/CIVector)	inputColor ((null)/CIColor)	inputRadius (CIAttributeTypeDistance/NSNumber)	inputCrossScale (CIAttributeTypeScalar/NSNumber)	
+		inputCrossAngle (CIAttributeTypeAngle/NSNumber)	inputCrossOpacity (CIAttributeTypeScalar/NSNumber)	inputCrossWidth (CIAttributeTypeDistance/NSNumber)	inputEpsilon (CIAttributeTypeScalar/NSNumber)
+	filter CIStripesGenerator. (Stripes)	Categories:  CICategoryGenerator,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputCenter (CIAttributeTypePosition/CIVector)	inputColor0 ((null)/CIColor)	inputColor1 ((null)/CIColor)	inputWidth (CIAttributeTypeDistance/NSNumber)	
+		inputSharpness (CIAttributeTypeScalar/NSNumber)
+
+Category CICategoryGradient:
+	filter CIGaussianGradient. (Gaussian Gradient)	Categories:  CICategoryGradient,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputCenter (CIAttributeTypePosition/CIVector)	inputColor0 (CIAttributeTypeColor/CIColor)	inputColor1 (CIAttributeTypeColor/CIColor)	inputRadius (CIAttributeTypeDistance/NSNumber)
+	filter CILinearGradient. (Linear Gradient)	Categories:  CICategoryGradient,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputPoint0 (CIAttributeTypePosition/CIVector)	inputPoint1 (CIAttributeTypePosition/CIVector)	inputColor0 (CIAttributeTypeColor/CIColor)	inputColor1 (CIAttributeTypeColor/CIColor)
+	filter CIRadialGradient. (Radial Gradient)	Categories:  CICategoryGradient,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputCenter (CIAttributeTypePosition/CIVector)	inputRadius0 (CIAttributeTypeDistance/NSNumber)	inputRadius1 (CIAttributeTypeDistance/NSNumber)	inputColor0 (CIAttributeTypeColor/CIColor)	
+		inputColor1 (CIAttributeTypeColor/CIColor)
+	filter CISmoothLinearGradient. (Smooth Linear Gradient)	Categories:  CICategoryGradient,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputPoint0 (CIAttributeTypePosition/CIVector)	inputPoint1 (CIAttributeTypePosition/CIVector)	inputColor0 (CIAttributeTypeColor/CIColor)	inputColor1 (CIAttributeTypeColor/CIColor)
+
+Category CICategoryStylize:
+	filter CIBlendWithAlphaMask. (Blend With Alpha Mask)	Categories:  CICategoryStylize,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)	inputMaskImage (CIAttributeTypeImage/CIImage)
+	filter CIBlendWithMask. (Blend With Mask)	Categories:  CICategoryStylize,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputBackgroundImage (CIAttributeTypeImage/CIImage)	inputMaskImage (CIAttributeTypeImage/CIImage)
+	filter CIBloom. (Bloom)	Categories:  CICategoryStylize,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputRadius (CIAttributeTypeDistance/NSNumber)	inputIntensity (CIAttributeTypeScalar/NSNumber)
+	filter CIGloom. (Gloom)	Categories:  CICategoryStylize,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputRadius (CIAttributeTypeDistance/NSNumber)	inputIntensity (CIAttributeTypeScalar/NSNumber)
+	filter CIHighlightShadowAdjust. (Highlights and Shadows)	Categories:  CICategoryStylize,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputRadius (CIAttributeTypeScalar/NSNumber)	inputShadowAmount (CIAttributeTypeScalar/NSNumber)	
+		inputHighlightAmount (CIAttributeTypeScalar/NSNumber)
+	filter CIPixellate. (Pixelate)	Categories:  CICategoryStylize,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputCenter (CIAttributeTypePosition/CIVector)	inputScale (CIAttributeTypeDistance/NSNumber)
+
+Category CICategorySharpen:
+	filter CISharpenLuminance. (Sharpen Luminance)	Categories:  CICategorySharpen,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputSharpness (CIAttributeTypeScalar/NSNumber)
+	filter CIUnsharpMask. (Unsharp Mask)	Categories:  CICategorySharpen,  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputRadius (CIAttributeTypeDistance/NSNumber)	inputIntensity (CIAttributeTypeScalar/NSNumber)
+
+Category CICategoryBlur:
+	filter CIGaussianBlur. (Gaussian Blur)	Categories:  CICategoryBlur,  CICategoryStillImage,  CICategoryVideo,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputRadius (CIAttributeTypeScalar/NSNumber)
+
+Category CICategoryVideo:
+	filter CIConvolution3X3. (3X3 Convolution)	Categories:  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputWeights ((null)/CIVector)	inputBias ((null)/NSNumber)
+	filter CIConvolution5X5. (5X5 Convolution)	Categories:  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputWeights ((null)/CIVector)	inputBias ((null)/NSNumber)
+	filter CIConvolution9Horizontal. (Horizontal 9 Convolution)	Categories:  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputWeights ((null)/CIVector)	inputBias ((null)/NSNumber)
+	filter CIConvolution9Vertical. (Vertical 9 Convolution)	Categories:  CICategoryVideo,  CICategoryStillImage,  CICategoryBuiltIn
+		Input keys:	inputImage (CIAttributeTypeImage/CIImage)	inputWeights ((null)/CIVector)	inputBias ((null)/NSNumber)
